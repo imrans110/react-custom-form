@@ -6,10 +6,11 @@ const App = () => {
   const [value, setValue] = useState("");
   return (
     <Form>
-      <Form.Label>Username</Form.Label>
+      <Form.Label>Usersname</Form.Label>
       <Form.Input
         type="text"
         color="blue"
+        disabled
         value={value}
         onChange={event => {
           setValue(event.target.value);

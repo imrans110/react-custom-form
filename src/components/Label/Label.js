@@ -12,6 +12,6 @@ export default Label;
 const LabelContainer = styled.span`
   margin: 10px 10px 5px;
   color: ${props => props.color || "#000"};
-  font-size: ${props => (props.size ? getSize(props.size) : getSize())};
+  font-size: ${props => getSize(props.size, "font")};
   font-weight: 500;
 `;

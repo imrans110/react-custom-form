@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import Label from "./Label";
 import Input from "./Input";
@@ -13,9 +14,9 @@ const Form = props => {
   };
 
   return (
-    <form {...props} onSubmit={onFormSubmit}>
+    <StyledForm {...props} onSubmit={onFormSubmit}>
       {props.children}
-    </form>
+    </StyledForm>
   );
 };
 
@@ -33,3 +34,9 @@ Form.defaultProps = {
 };
 
 export default Form;
+
+const StyledForm = styled.form`
+  max-width: 100%;
+  height: 100%;
+  margin: 1em;
+`;

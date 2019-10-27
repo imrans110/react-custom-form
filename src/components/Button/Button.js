@@ -18,7 +18,7 @@ const StyledButton = styled.button`
     getHexColor(props.textColor) || props.color !== "white"
       ? getHexColor("white")
       : getHexColor("black")};
-  font-size: ${props => (props.size ? getSize(props.size) : getSize())};
+  font-size: ${props => (props.size ? getSize(props.size, "font") : "15px")};
   border: 1px solid white;
   border-radius: 5px;
 
