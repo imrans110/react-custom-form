@@ -2,7 +2,7 @@ export const getSize = (size, type) => {
   if (type === "input") {
     switch (size) {
       case "tiny":
-        return "8%px";
+        return "8px";
 
       case "small":
         return "15%";

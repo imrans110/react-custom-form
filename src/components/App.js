@@ -10,14 +10,26 @@ const App = () => {
       <Form.Input
         type="text"
         color="blue"
-        disabled
         value={value}
         onChange={event => {
           setValue(event.target.value);
         }}
       />
       <Form.Toggle size="medium" />
-      <Form.Button color="blue">Submit</Form.Button>
+      <Form.Button color="blue" size="huge">
+        Submit
+      </Form.Button>
+      <Form.Button color="purple" size="large">
+        Submit
+      </Form.Button>
+      <Form.Button color="pink" size="medium">
+        Submit
+      </Form.Button>
+      <Form.Button color="yellow">Submit</Form.Button>
+
+      <Form.Button color="red" size="small">
+        Submit
+      </Form.Button>
     </Form>
   );
 };

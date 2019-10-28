@@ -10,7 +10,9 @@ import Button from "./Button";
 const Form = props => {
   const onFormSubmit = event => {
     event.preventDefault();
-    props.onSubmit();
+    if (props.onSubmit) {
+      props.onSubmit();
+    }
   };
 
   return (
