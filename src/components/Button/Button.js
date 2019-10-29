@@ -8,7 +8,11 @@ import {
 } from "../../utils/getStyles";
 
 const Button = props => {
-  return <StyledButton {...props}>{props.children}</StyledButton>;
+  return (
+    <StyledButton {...props} type="button">
+      {props.children}
+    </StyledButton>
+  );
 };
 
 export default Button;

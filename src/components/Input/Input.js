@@ -30,6 +30,8 @@ Input.defaultProps = {
 export default Input;
 
 const InputContainer = styled.div`
+  margin: 5px 0 10px;
+
   svg {
     position: absolute;
     padding: 5px;

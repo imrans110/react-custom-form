@@ -1,21 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Form from "./Form";
 
 const App = () => {
-  const [value, setValue] = useState("");
   return (
-    <Form>
-      <Form.Label>Usersname</Form.Label>
-      <Form.Input
-        type="text"
-        color="blue"
-        value={value}
-        onChange={event => {
-          setValue(event.target.value);
-        }}
-      />
-      <Form.Toggle size="medium" />
+    <Form
+      config={[
+        {
+          type: "email",
+          id: "email",
+          label: "Enter you Email",
+          required: true
+        },
+        {
+          type: "string",
+          id: "username",
+          label: "Enter you username",
+          required: true,
+          props: { disabled: true, color: "red" }
+        },
+        {
+          type: "button",
+          id: "button",
+          value: "Submit Button"
+        }
+      ]}
+    >
+      <Form.Toggle size="medium" inline />
       <Form.Button color="blue" size="huge">
         Submit
       </Form.Button>

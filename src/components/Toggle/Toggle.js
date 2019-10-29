@@ -5,10 +5,13 @@ import { getStyleSizes, getHexColor } from "../../utils/getStyles";
 
 const Toggle = props => {
   return (
-    <ToggleContainer {...props}>
-      <input type="checkbox" />
-      <span className="slider" />
-    </ToggleContainer>
+    <React.Fragment>
+      <ToggleContainer {...props}>
+        <input type="checkbox" />
+        <span className="slider" />
+      </ToggleContainer>
+      {props.inline && <br />}
+    </React.Fragment>
   );
 };
 
